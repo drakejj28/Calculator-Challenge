@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calc.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Calculator Challenge</title>
+
+</head>
+<body>
+    <main>
+
+        <h1>CALC APP</h1>
+
+        <!-- section for calculator-->
+        <section id="calc">
+
+            <!-- display panel with a readonly attribute which is a boolean attribute that specifies that an input field is read-only -->
+            <input id="display-panel" readonly>
+
+            <!--div for the calculator's buttons-->
+            <div id="btns">
+
+                <!--buttons with an onclick attribute set to the appendToDisplay JS function -->
+                <button onclick="appendToDisplay('+')" class="op-btn">+</button>
+                <button onclick="appendToDisplay('7')">7</button>
+                <button onclick="appendToDisplay('8')">8</button>
+                <button onclick="appendToDisplay('9')">9</button>
+                <button onclick="appendToDisplay('-')" class="op-btn">-</button>
+                <button onclick="appendToDisplay('4')">4</button>
+                <button onclick="appendToDisplay('5')">5</button>
+                <button onclick="appendToDisplay('6')">6</button>
+                <button onclick="appendToDisplay('*')" class="op-btn">*</button>
+                <button onclick="appendToDisplay('1')">1</button>
+                <button onclick="appendToDisplay('2')">2</button>
+                <button onclick="appendToDisplay('3')">3</button>
+                <button onclick="appendToDisplay('/')" class="op-btn">/</button>
+                <button onclick="appendToDisplay('0')">0</button>
+                <button onclick="appendToDisplay('.')">.</button>
+
+                <!--button with an onclick attribute set to the calculate JS function -->
+                <button onclick="calculate()">=</button>
+
+                <!--button with an onclick attribute set to the clearDisplay JS function -->
+                <button onclick="clearDisplay()" class="op-btn">Clr</button>
+
+                <script src="calc.js"></script>
+            </div>
+
+        </section>
+    </main>
+    
+</body>
+</html>
